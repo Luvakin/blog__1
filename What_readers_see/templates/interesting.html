@@ -1,0 +1,132 @@
+{%load static %}
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+        <link as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&amp;display=swap" onload="this.rel='stylesheet'" rel="stylesheet"/>
+        <title>Akin's Blog</title>
+        <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <style type="text/tailwindcss">
+            :root {
+                --primary-color: #1173d4;
+            }
+            body {
+                font-family: 'Newsreader', serif;
+            }
+        </style>
+    </head>
+    <body class="bg-stone-50  text-gray-800"">
+        <div class=" relative flex min-h-screen flex-col" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+    
+                {% include "nav.html" %}
+                <main class="px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-10 lg:py-16">
+                    <div class="layout-content-container flex flex-col w-full max-w-4xl">
+                        <div class="mb-12">
+                            <h2 class="text-stone-900 text-5xl font-bold leading-tight tracking-tighter">Things I Find Interesting</h2>
+                            <p class="text-stone-500 mt-2 text-lg">A curated collection of links from around the web.</p>
+                        </div>
+                        <div class="space-y-10">
+                            <div>
+                                <h3 class="text-stone-800 text-xl font-bold leading-tight tracking-tight border-b border-stone-200 pb-3 mb-6">Newspapers</h3>
+                                <div class="space-y-6">
+                                    <a class="group flex items-start gap-4 bg-transparent p-4 rounded-lg hover:bg-stone-100 transition-colors duration-300" href="#">
+                                        <span class="material-symbols-outlined text-stone-400 group-hover:text-stone-600 mt-1">link</span>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="text-stone-800 text-base font-medium leading-normal group-hover:text-stone-900">The New York Times</p>
+                                            <p class="text-stone-500 text-sm font-normal leading-normal">
+                                                The New York Times delivers breaking news, multimedia, opinion and analysis on politics, business, culture, arts and sports.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="group flex items-start gap-4 bg-transparent p-4 rounded-lg hover:bg-stone-100 transition-colors duration-300" href="#">
+                                        <span class="material-symbols-outlined text-stone-400 group-hover:text-stone-600 mt-1">link</span>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="text-stone-800 text-base font-medium leading-normal group-hover:text-stone-900">The Wall Street Journal</p>
+                                            <p class="text-stone-500 text-sm font-normal leading-normal">
+                                                The Wall Street Journal is a business-focused, international daily newspaper based in New York City.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="group flex items-start gap-4 bg-transparent p-4 rounded-lg hover:bg-stone-100 transition-colors duration-300" href="#">
+                                        <span class="material-symbols-outlined text-stone-400 group-hover:text-stone-600 mt-1">link</span>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="text-stone-800 text-base font-medium leading-normal group-hover:text-stone-900">The Guardian</p>
+                                            <p class="text-stone-500 text-sm font-normal leading-normal">
+                                                The Guardian is a British daily newspaper. It was founded in 1821 as The Manchester Guardian.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-stone-800 text-xl font-bold leading-tight tracking-tight border-b border-stone-200 pb-3 mb-6">Documents</h3>
+                                <div class="space-y-6">
+                                    <a class="group flex items-start gap-4 bg-transparent p-4 rounded-lg hover:bg-stone-100 transition-colors duration-300" href="#">
+                                        <span class="material-symbols-outlined text-stone-400 group-hover:text-stone-600 mt-1">link</span>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="text-stone-800 text-base font-medium leading-normal group-hover:text-stone-900">Documentation Best Practices</p>
+                                            <p class="text-stone-500 text-sm font-normal leading-normal">
+                                                A comprehensive guide to understanding and implementing effective documentation practices.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="group flex items-start gap-4 bg-transparent p-4 rounded-lg hover:bg-stone-100 transition-colors duration-300" href="#">
+                                        <span class="material-symbols-outlined text-stone-400 group-hover:text-stone-600 mt-1">link</span>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="text-stone-800 text-base font-medium leading-normal group-hover:text-stone-900">Tech Industry Trends</p>
+                                            <p class="text-stone-500 text-sm font-normal leading-normal">An in-depth analysis of the latest trends and innovations in the tech industry.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-stone-800 text-xl font-bold leading-tight tracking-tight border-b border-stone-200 pb-3 mb-6">Cool Tech</h3>
+                                <div class="space-y-6">
+                                    <a class="group flex items-start gap-4 bg-transparent p-4 rounded-lg hover:bg-stone-100 transition-colors duration-300" href="#">
+                                        <span class="material-symbols-outlined text-stone-400 group-hover:text-stone-600 mt-1">link</span>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="text-stone-800 text-base font-medium leading-normal group-hover:text-stone-900">Nova Programming Language</p>
+                                            <p class="text-stone-500 text-sm font-normal leading-normal">
+                                                A revolutionary new programming language designed for high performance and scalability.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="group flex items-start gap-4 bg-transparent p-4 rounded-lg hover:bg-stone-100 transition-colors duration-300" href="#">
+                                        <span class="material-symbols-outlined text-stone-400 group-hover:text-stone-600 mt-1">link</span>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="text-stone-800 text-base font-medium leading-normal group-hover:text-stone-900">Productivity AI</p>
+                                            <p class="text-stone-500 text-sm font-normal leading-normal">A cutting-edge AI-powered tool for enhancing productivity and streamlining workflows.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-stone-800 text-xl font-bold leading-tight tracking-tight border-b border-stone-200 pb-3 mb-6">AI Research</h3>
+                                <div class="space-y-6">
+                                    <a class="group flex items-start gap-4 bg-transparent p-4 rounded-lg hover:bg-stone-100 transition-colors duration-300" href="#">
+                                        <span class="material-symbols-outlined text-stone-400 group-hover:text-stone-600 mt-1">link</span>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="text-stone-800 text-base font-medium leading-normal group-hover:text-stone-900">Neural Network Innovations</p>
+                                            <p class="text-stone-500 text-sm font-normal leading-normal">A groundbreaking paper on the latest advancements in neural network architectures.</p>
+                                        </div>
+                                    </a>
+                                    <a class="group flex items-start gap-4 bg-transparent p-4 rounded-lg hover:bg-stone-100 transition-colors duration-300" href="#">
+                                        <span class="material-symbols-outlined text-stone-400 group-hover:text-stone-600 mt-1">link</span>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="text-stone-800 text-base font-medium leading-normal group-hover:text-stone-900">Ethics of AI</p>
+                                            <p class="text-stone-500 text-sm font-normal leading-normal">An insightful article exploring the ethical implications of artificial intelligence.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

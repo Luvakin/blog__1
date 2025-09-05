@@ -1,0 +1,23 @@
+<header class="w-full max-w-5xl mx-auto py-6 px-4">
+                <!-- Desktop: Logo + Nav -->
+                <div class="hidden md:flex items-center justify-between">
+                    <!-- Logo -->
+                    <a class="text-2xl font-bold text-gray-900" href="#">Akin's Blog</a>
+
+                    <!-- Desktop nav -->
+                    <nav class="flex items-center space-x-8">
+                        <a class="text-base text-gray-600 hover:text-gray-900 transition-colors" href="{% url 'readers:home' %}">Home</a>
+                        <a class="text-base text-gray-600 hover:text-gray-900 transition-colors" href="{% url 'readers:interests' %}">Things I Find Interesting</a>
+                        <a class="text-base text-gray-600 hover:text-gray-900 transition-colors" href="#">Projects</a>
+                        <a class="text-base text-gray-600 hover:text-gray-900 transition-colors" href="#">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- Mobile: Nav as centered tab bar -->
+                <nav class="flex justify-center space-x-6 md:hidden">
+                    <a class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors" href="{% url 'readers:home' %}">Home</a>
+                    <a class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors" href="{% url 'readers:interests' %}">Interests</a>
+                    <a class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors" href="#">Projects</a>
+                    <a class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors" href="#">Contact</a>
+                </nav>
+</header>

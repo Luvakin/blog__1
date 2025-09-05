@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&amp;display=swap" onload="this.rel='stylesheet'" rel="stylesheet"/>
+        <title>Akin's Blog</title>
+        <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <style type="text/tailwindcss">
+            :root {
+                --primary-color: #1173d4;
+            }
+            body {
+                font-family: 'Newsreader', serif;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-50 text-gray-800">
+        <div class="relative flex min-h-screen flex-col">
+            {% include "nav.html" %}
+            <main class="flex-grow flex items-center">
+                <div class="max-w-3xl mx-auto px-6 text-center">
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">A space for curiosity.</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-10">
+                        Welcome. This is a quiet corner of the internet where I share my thoughts, projects, and things that pique my interest. There are no articles just yet, but feel free to look around.
+                    <div class="flex flex-col sm:flex-row justify-center sm:space-x-4 space-y-4 sm:space-y-0">
+                        <a
+                            class="inline-block bg-gray-900 text-white font-medium py-3 px-8 rounded-md hover:bg-gray-800 transition-colors text-center"
+                            href="{% url 'readers:interests' %}"
+                        >
+                            Interests
+                        </a>
+                        <a
+                            class="inline-block bg-gray-200 text-gray-800 font-medium py-3 px-8 rounded-md hover:bg-gray-300 transition-colors text-center"
+                            href="#"
+                        >
+                            Get in Touch
+                        </a>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </body>
+   
+    
+</html>
